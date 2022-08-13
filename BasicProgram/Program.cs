@@ -10,8 +10,10 @@ namespace BasicProgram
             Console.WriteLine("select the number for relative program");
             Console.WriteLine(" 1 :for Flip Coin Percentage");
             Console.WriteLine(" 2 :for LeapYear");
-            Console.WriteLine(" 2 :for Power Of Two");
-            Console.WriteLine(" 3 :for Harmonic Number");
+            Console.WriteLine(" 3 :for Power Of Two");
+            Console.WriteLine(" 4 :for Harmonic Number");
+            Console.WriteLine(" 5 :for Prime Factor");
+            Console.WriteLine(" 6 :for Compute Quotient and Remainder");
 
             int Answer = Convert.ToInt32(Console.ReadLine());
 
@@ -36,6 +38,10 @@ namespace BasicProgram
                 case 5:
                     Factor factor = new Factor();
                     factor.PrimeFactor();
+                    break;
+                case 6:
+                    ComputQuotientReminder querem = new ComputQuotientReminder();
+                    querem.QueRem();
                     break;
             }
         }
