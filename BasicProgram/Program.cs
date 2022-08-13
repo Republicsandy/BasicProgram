@@ -33,6 +33,10 @@ namespace BasicProgram
                     Harmonic harmonicnumber = new Harmonic();
                     harmonicnumber.HarmonicFunction();
                     break;
+                case 5:
+                    Factor factor = new Factor();
+                    factor.PrimeFactor();
+                    break;
             }
         }
     }
