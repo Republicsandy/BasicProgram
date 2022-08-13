@@ -15,7 +15,8 @@ namespace BasicProgram
             Console.WriteLine(" 5 :for Prime Factor");
             Console.WriteLine(" 6 :for Compute Quotient and Remainder");
             Console.WriteLine(" 7 :for Swap Tow Number");
-            Console.WriteLine(" 7 :for even or odd Number");
+            Console.WriteLine(" 8 :for even or odd Number");
+            Console.WriteLine(" 9 :for Vowel or Consonant ");
 
             int Answer = Convert.ToInt32(Console.ReadLine());
 
@@ -52,6 +53,10 @@ namespace BasicProgram
                 case 8:
                     EvenOdd evenodd = new EvenOdd();
                     evenodd.FindEvenOdd();
+                    break;
+                case 9:
+                    ConsonentVowel consonentVowel = new ConsonentVowel();
+                    consonentVowel.FindVowelConsonant();
                     break;
             }
         }

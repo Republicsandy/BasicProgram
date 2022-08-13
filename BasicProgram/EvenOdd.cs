@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace BasicProgram
 {
-    internal class EvenOdd
+    class EvenOdd
     {
+        public void FindEvenOdd()
+        {
+            Console.WriteLine("Enter Number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+                Console.WriteLine("{0} is even number", num);
+            else
+                Console.WriteLine("{0} is odd number", num);
+            Console.ReadLine();
+        }
     }
 }
