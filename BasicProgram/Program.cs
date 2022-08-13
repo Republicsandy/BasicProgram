@@ -17,6 +17,7 @@ namespace BasicProgram
             Console.WriteLine(" 7 :for Swap Tow Number");
             Console.WriteLine(" 8 :for even or odd Number");
             Console.WriteLine(" 9 :for Vowel or Consonant ");
+            Console.WriteLine(" 10 :for Largest Number among three number ");
 
             int Answer = Convert.ToInt32(Console.ReadLine());
 
@@ -57,6 +58,10 @@ namespace BasicProgram
                 case 9:
                     ConsonentVowel consonentVowel = new ConsonentVowel();
                     consonentVowel.FindVowelConsonant();
+                    break;
+                case 10:
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.GetlargeNumber();
                     break;
             }
         }
