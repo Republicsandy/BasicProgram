@@ -14,6 +14,7 @@ namespace BasicProgram
             Console.WriteLine(" 4 :for Harmonic Number");
             Console.WriteLine(" 5 :for Prime Factor");
             Console.WriteLine(" 6 :for Compute Quotient and Remainder");
+            Console.WriteLine(" 7 :for Swap Tow Number");
 
             int Answer = Convert.ToInt32(Console.ReadLine());
 
@@ -42,6 +43,10 @@ namespace BasicProgram
                 case 6:
                     ComputQuotientReminder querem = new ComputQuotientReminder();
                     querem.QueRem();
+                    break;
+                case 7:
+                    SwapTwoNumber swap = new SwapTwoNumber();
+                    swap.SwapingNumbers();
                     break;
             }
         }
